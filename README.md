@@ -1,4 +1,4 @@
-# TwilioQueuesMac
+# .NET 5 and MVC 6 - Twilio Queues for Mac
 A repository that shows you how to integrate RabitMQ with .NET 5 and .NET MVC 6 on a Mac.
 
 * Libs
