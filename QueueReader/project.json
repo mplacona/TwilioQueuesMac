@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0-*",
+  "description": "QueueReader Console Application",
+  "tags": [""],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "RabbitMQ.Client": "3.5.4",
+    "Twilio": "4.0.51",
+    "Newtonsoft.Json": "7.0.1",
+    "Libs": "1.0.0-*"
+  },
+
+  "commands": {
+    "run": "run"
+  },
+
+  "frameworks": {
+    "dnx451": {}
+  }
+}
