@@ -8,11 +8,13 @@ namespace QueueWritter.Controllers
 {
     public class HomeController : Controller
     {
+        // http://twilio-queues.ngrok.io/Home/Index
         public IActionResult Index()
         {
             return Content("I'm running");
         }
 
+        // http://twilio-queues.ngrok.io/Home/SayHello
         public void SayHello(Libs.Message incomingMessage)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };

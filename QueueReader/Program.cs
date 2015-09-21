@@ -29,7 +29,9 @@ namespace QueueReader
                         var ea = (BasicDeliverEventArgs)consumer.Queue.Dequeue();
                         var message = JsonConvert.DeserializeObject<Libs.Message>(Encoding.UTF8.GetString(ea.Body));
                         Console.WriteLine(" [x] Received {0}", message.Body);
-                        client.SendMessage("+4915735986805", message.From, "Thanks for seeing me @ dmconf15. Here's some Twilio <3 to get you started, just use the code DMConf15. Hit me up @marcos_placona");
+                        
+                        // Send a nice message back to each one of the Inbound Messages
+                        client.SendMessage("", message.From, "Thanks for seeing me @ dmconf15. Here's some Twilio <3 to get you started, just use the code NOSQL15. Hit me up @marcos_placona");
                     }
                 }
             }
